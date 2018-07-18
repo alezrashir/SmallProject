@@ -29,7 +29,7 @@ export class AppComponent implements  OnInit {
   ngOnInit() {
 
     const posts$ = Observable
-      .ajax('https://bookslibraryshir.herokuapp.com/assets/data/books.json')
+      .ajax('https://smallproject.herokuapp.com/assets/data/books.json')
       .map(e => e.response);
 
     const htmlSubscription = posts$
@@ -48,12 +48,12 @@ export class AppComponent implements  OnInit {
 
 
 
-  delete(b: Book) {
+  delete(book: Book) {
 
 
        let dialogRef = this.dialog.open(DialogDeleteComponent, {
         width: '600px',
-        data: b.id
+        data: book.id
       }
     );
 
@@ -63,7 +63,7 @@ export class AppComponent implements  OnInit {
 
       this.DialogResult = result;
       if (result === 'yes') {
-        const index = this.Books.indexOf(b, 0);
+        const index = this.Books.indexOf(book, 0);
         if (index > -1) {
           this.Books.splice(index, 1);
         }
@@ -86,7 +86,7 @@ export class AppComponent implements  OnInit {
     dialogRef.afterClosed().subscribe(result => {
 
       if (result === 'cancel') { return; }
-      var IsOnce = true;
+      let IsOnce = true;
 
      result.title = titleRemoveNotNumbers(result.title);
 
@@ -120,7 +120,7 @@ export class AppComponent implements  OnInit {
 
       if (result === 'cancel') { return; }
 
-      var IsOnce = true;
+      let IsOnce = true;
       const index = this.Books.indexOf(b, 0);
       result.title = titleRemoveNotNumbers(result.title);
 
@@ -139,6 +139,10 @@ export class AppComponent implements  OnInit {
 
 
   }
+
+
+
+
 }
  function titleRemoveNotNumbers(title: string) {
 
