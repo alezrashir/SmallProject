@@ -48,8 +48,9 @@ export class AppComponent implements  OnInit {
 
 
 
-  delete(book: Book) {
 
+
+  delete(book: Book) {
 
        let dialogRef = this.dialog.open(DialogDeleteComponent, {
         width: '600px',
@@ -71,6 +72,9 @@ export class AppComponent implements  OnInit {
     });
 
   }
+
+
+
 
 
 
@@ -107,6 +111,9 @@ export class AppComponent implements  OnInit {
 
 
 
+
+
+
     edit(b: Book) {
 
     let dialogRef = this.dialog.open(DialogEditComponent, {
@@ -139,6 +146,9 @@ export class AppComponent implements  OnInit {
 
 
   }
+
+
+
 
 
 

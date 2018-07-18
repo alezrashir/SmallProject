@@ -29,7 +29,7 @@ export class DialogAddComponent implements OnInit {
 
    if (id !== 0 && author !== '' && title !== '' && publish !== '') {
 
-     var book = new Book(id, publish, title, author);
+     let book = new Book(id, publish, title, author);
      this.thisDialogRef.close(book);
    } else {
      alert('Error , Not All Input is valid');
