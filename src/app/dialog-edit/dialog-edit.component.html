@@ -1,0 +1,22 @@
+<div class="dialog-form">
+
+<mat-card-title>
+  <h1> Book Editor :</h1>
+</mat-card-title>
+
+  <mat-dialog-content>
+    Book Title :   <input  type="text" value={{data.title}} #title><br>
+    Author Name :   <input type="text" value={{data.author}} #author><br>
+    Publish Date :  <input  type="date" value= {{data.publish}} #publish><br>
+    Bood Id : {{data.id}}
+  </mat-dialog-content>
+
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="OnEditConfirm()">Yes</button>
+    <button mat-raised-button (click)="OnEditCancel()">No</button>
+  </mat-dialog-actions>
+
+
+
+</div>

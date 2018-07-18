@@ -1,0 +1,20 @@
+<div class="dialog-form">
+
+  <mat-card-title>
+    <h1> Add Book :</h1>
+  </mat-card-title>
+
+  <mat-dialog-content>
+    Book Title :   <input  type="text"  #title><br>
+    Author Name :   <input type="text" #author><br>
+    Publish Date :  <input  type="date"#publish><br>
+    Bood Id : <input type="number" #id><br>
+  </mat-dialog-content>
+
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="AddConfirm()">Yes</button>
+    <button mat-raised-button (click)="Cancel()">No</button>
+  </mat-dialog-actions>
+
+</div>

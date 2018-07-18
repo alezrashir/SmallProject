@@ -1,0 +1,72 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+.mat-card-content, mat-dialog-content,mat-card-title{
+  color: rgba(255, 255, 255,255);
+  font-family: "Impact", Charcoal, sans-serif;
+  text-shadow:1px 1px #3333ff, 0 1px #fa2dec, 1px 0 #57f2f2, 0 -1px #fa2dec,-1px 1px #3333ff, 0 2px #fa2dec ;
+  font-size: 18px;
+
+}
+
+.mat-card-title{
+
+  text-align: center;
+}
+html{
+  height: 100%;
+  background-image: linear-gradient(to top, #6cfeef 0%, #e600e6 100%);
+}
+
+.img {
+  width: 60%;
+  height: 60%;
+
+
+}
+.card-picture {
+  width: 15%;
+  margin-bottom: 2%;
+
+
+}
+
+
+
+.mat-card-content{
+  color: rgba(255, 255, 255,255);
+  font-family: "Impact", Charcoal, sans-serif;
+  text-shadow:1px 1px #3333ff, 0 1px #fa2dec, 1px 0 #57f2f2, 0 -1px #fa2dec,-1px 1px #3333ff, 0 2px #fa2dec ;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+.container {
+  min-height: 100%;
+  width: 100%;
+}
+
+.top-part {
+
+
+
+  font-size: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255,255);
+  font-family: "Impact";
+  text-shadow:3px 1px #3333ff, 0 1px #fa2dec, 1px 0 #57f2f2, 0 -1px #fa2dec,-1px 1px #3333ff, 0 3px #fa2dec ;
+
+
+}
+
+mat-card-subtitle{
+  text-shadow: 1px 1px 3px #000000;
+  font-family: Georgia;
+  font-size: 15px;
+
+}
+
+
+
